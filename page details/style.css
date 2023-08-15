@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container {
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.title h1,
+.left h4,
+.subhedding,
+.overview h4 {
+  font-family: space-grotesk-bold, sans-serif;
+}
+
+.title h1 {
+  margin-top: 10px;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+.tag,
+.left p,
+.overview p,
+ul {
+  font-family: "Helvetica-Now-Display", sans-serif;
+  text-align: justify;
+}
+.tag h5{
+  width: 65px;
+  border: none;
+  margin-right: 20px;
+  box-sizing: border-box;
+  box-shadow: 0.1px 0.1px 2px 0.1px rgb(100 98 128);
+  color: #646262;
+  text-align: center;
+  font-size: 17px;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.banner_image img {
+  width: 100%;
+  height: auto;
+}
+.text_image,
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.left h4 {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.left p {
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+.right img {
+  width: 520px;
+  height: auto;
+  margin: auto;
+}
+
+.subhedding {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1.5;
+}
+
+.description {
+  gap: 30px;
+}
+
+.overview {
+  max-width: 700px;
+}
+
+.overview h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.overview p {
+  margin: 10px 0;
+  color: #1f1f1f;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.overview li {
+  margin-top: 10px;
+  list-style: circle;
+  color: #1f1f1f;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: #1f1f1f !important;
+}
+.slick-next,
+.slick-prev {
+  padding: 30px !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
+.right {
+  width: 600px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  section,
+  .text_image,
+  .description,
+  .tag {
+    flex-direction: column;
+  }
+  .title {
+    margin: 20px 0;
+  }
+  .tag{align-items: baseline;}
+  .tag h5 {
+    margin: 5px;
+  }
+  .right img,.right {
+    width: 100%;
+    margin: auto;
+  }
+  .right {
+    max-width: 360px;
+  }
+  .text_image {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .overview {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .overview ul {
+    margin-left: 20px;
+  }
+  .slick-next,
+  .slick-prev {
+    padding: 10px !important;
+    max-width: 100%;
+  }
+}
